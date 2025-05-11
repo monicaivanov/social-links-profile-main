@@ -1,3 +1,67 @@
+/* remove default settings*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* CSS variables */
+
+:root {
+  --ff: "Inter", sans-serif;;
+
+  --green-clr: hsl(75, 94%, 57%);
+  --gray-900-clr: hsl(0, 0%, 8%);
+  --gray-800-clr: hsl(0, 0%, 12%);
+  --gray-700-clr: hsl(0, 0%, 20%);
+  --white-clr: hsl(0, 0%, 100%);
+
+  --fw-light: 400;
+  --fw-semibold: 700;
+  --fw-bold: 700;
+
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-500: 40px;
+
+  --fs-heading: 24px;
+  --fs-bodytext: 14px;
+}
+
+/* global view - Mobile first */
+
+/* layout */
+
+body {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  place-items: center;
+}
+
+.card {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+}
 
 
 
